@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+.약:after{content: ""; clear: both; display: block;}
+           /* 코드가 깨질 때 클래스 명에 '약'을 붙이고
+           .약:after{content: ""; clear: both; display: block;} 을 적용 */
+
+/* 비디오 */
+.비디오전체{width: 80%; margin: auto;}  /* margin: auto는 가운데에 정렬 */
+.비디오전체 video{width: 100%;}
+
+.main{background-color: #EEEEEE;
+      width: 80%; margin: auto;    /* %로 설정하면 반응형 UI/UX 만들 때 좋음 */
+      padding: 2%; 
+      padding-top: 5%;          /* 아래쪽에 적는 것이 힘이 더 쎔 */
+      box-sizing: border-box;   /* padding은 밖으로 감싸는 것
+                                   box-sizing: border-box; 는 영역 안으로 감싸는 것 */
+      }
+
+.main .첫째{background-color: mediumpurple; margin-top: 30px;}
+.main .첫째 .첫째손{float: left; height: 200px; width: 49%;}
+.main .첫째 .자식1{background-color: #87A2FB;
+                  margin-right: 2%;}
+.main .첫째 .자식2{background-color: #ADDDD0;}
+
+.main .둘째{background-color: gray; margin-top: 30px;}
+.main .둘째 .둘째손{background-color: gold;
+                   float: left; height: 200px; width: 33.3333%}
+/* .main .둘째 .둘째손.둘자식1{}    띄어쓰지 않고 붙여적을 때 ex).A.B = A이면서 B이기도 하다 */
+.main .둘째 .둘자식1{background-color: goldenrod;}
+.main .둘째 .둘자식2{background-color: darkseagreen;}
+.main .둘째 .둘자식3{background-color: green;}
+.main .둘째 .막내{clear: both;}
+
+.main .셋째{background-color: lightcoral; 
+            margin-top: 30px;}
+.main .셋째 iframe{width: 100%;}
+
+.main .넷째{background-color: skyblue;
+            margin-top: 30px;}
+.main .넷째 .넷째손{width: 23.5%; height: 200px; float: left;
+                   margin-right: 2%;}
+.main .넷째 .넷자손1{background-color: ivory;}
+.main .넷째 .넷자손2{background-color: lightpink;}
+.main .넷째 .넷자손3{background-color: plum;}
+.main .넷째 .넷자손4{background-color: palevioletred;
+                    margin-right: 0%;}
